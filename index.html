@@ -1,0 +1,449 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Abdullah Waleed Khalid</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Readex+Pro:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a neutral studio index so the clients' colourful sites carry the colour. Split hero with a fanned stack of real screenshots, a numbers strip, a 2×2 work grid, a dark band for AI & automation, then services, about and contact. */
+:root{
+  --bg:#F6F7F8; --surface:#FFFFFF; --fg:#101A26; --muted:#586474; --line:#DCE1E6;
+  --accent:#0D7A68; --accent-soft:#E2F2EE; --accent-ink:#FFFFFF;
+  --band:#0F1A24; --band-surface:#16232F; --band-fg:#E6EDF2; --band-muted:#97A6B4; --band-line:#263544; --band-accent:#4CC3A9;
+  --shadow:rgba(16,26,38,.28);
+  --f-display:"Bricolage Grotesque","Readex Pro",system-ui,sans-serif;
+  --f-body:"Readex Pro",system-ui,"Segoe UI",Tahoma,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2.5rem; --s5:4rem; --s6:6rem;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B121A; --surface:#121C26; --fg:#E6EDF2; --muted:#93A3B2; --line:#233140;
+  --accent:#4CC3A9; --accent-soft:#12302B; --accent-ink:#06120F;
+  --band:#101D29; --band-surface:#162634; --band-fg:#E6EDF2; --band-muted:#97A6B4; --band-line:#2A3B4C; --band-accent:#4CC3A9;
+  --shadow:rgba(0,0,0,.55); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B121A; --surface:#121C26; --fg:#E6EDF2; --muted:#93A3B2; --line:#233140;
+  --accent:#4CC3A9; --accent-soft:#12302B; --accent-ink:#06120F;
+  --band:#101D29; --band-surface:#162634; --band-fg:#E6EDF2; --band-muted:#97A6B4; --band-line:#2A3B4C; --band-accent:#4CC3A9;
+  --shadow:rgba(0,0,0,.55); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+main{overflow-x:clip}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.6;margin:0}
+.pad{padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.wrap{max-width:1120px;margin-inline:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{font-family:var(--f-body);letter-spacing:0}
+p{margin:0}
+.label{font:500 .72rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+[dir="rtl"] .label{letter-spacing:0;font-family:var(--f-body);font-size:.8rem}
+
+/* bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s2);padding-block:.8rem}
+.mark{font-family:var(--f-display);font-weight:800;font-size:1.1rem;letter-spacing:-.02em;text-decoration:none}
+.mark span{color:var(--accent)}
+.bar nav{display:flex;gap:var(--s3);align-items:center;font-size:.92rem}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--fg)}
+.lang{font:500 .85rem var(--f-body);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:.35rem .9rem;cursor:pointer}
+@media (max-width:700px){.bar nav a{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:var(--s5);align-items:center;padding-block:var(--s5) var(--s4)}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:var(--s4);padding-block:var(--s4) var(--s3)}}
+.hero-text{display:grid;gap:var(--s3);min-width:0}
+.avail{display:inline-flex;align-items:center;gap:.6rem;justify-self:start;font-size:.85rem;color:var(--muted);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.35rem .85rem .35rem .65rem}
+.dot{width:8px;height:8px;border-radius:50%;background:#2FA36B;box-shadow:0 0 0 4px color-mix(in srgb,#2FA36B 22%,transparent)}
+h1{font-weight:800;font-size:clamp(2.4rem,5.6vw,4.3rem);line-height:1.02;letter-spacing:-.035em}
+h1 em{font-style:normal;color:var(--accent)}
+[dir="rtl"] h1{font-weight:700;line-height:1.3}
+.who{font-size:1rem;color:var(--fg);font-weight:500}
+.who span{color:var(--muted);font-weight:400}
+.lede{max-width:56ch;color:var(--muted);font-size:1.08rem}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:10px;font:500 .95rem var(--f-body);text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.btn:hover{border-color:var(--fg)}
+.btn.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* fanned screenshots */
+.fan{position:relative;aspect-ratio:5/4;max-width:100%}
+.fan .frame{position:absolute;width:74%;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 30px 60px -30px var(--shadow)}
+.fan .frame img{display:block;width:100%;height:auto;aspect-ratio:1300/812;object-fit:cover}
+.fan .f1{inset-inline-start:0;top:4%;transform:rotate(-5deg)}
+.fan .f2{inset-inline-end:0;top:20%;transform:rotate(4deg)}
+.fan .f3{inset-inline-start:13%;bottom:2%;transform:rotate(-1deg);z-index:2}
+.fan .phone{position:absolute;inset-inline-end:4%;bottom:0;width:21%;z-index:3;border-radius:16px;overflow:hidden;border:4px solid var(--fg);background:var(--fg);box-shadow:0 20px 40px -18px var(--shadow)}
+.fan .phone img{display:block;width:100%;height:auto;aspect-ratio:390/844;object-fit:cover;object-position:top}
+@media (prefers-reduced-motion:no-preference){
+  .fan .frame,.fan .phone{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .fan:hover .f1{transform:rotate(-7deg) translateY(-6px)}
+  .fan:hover .f2{transform:rotate(6deg) translateY(-6px)}
+}
+
+/* numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line);margin-block:var(--s3) 0}
+.numbers div{padding:var(--s3) var(--s2);display:grid;gap:.15rem;border-inline-start:1px solid var(--line)}
+.numbers div:first-child{border-inline-start:none;padding-inline-start:0}
+.numbers b{font-family:var(--f-display);font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.numbers span{font-size:.86rem;color:var(--muted)}
+@media (max-width:700px){.numbers{grid-template-columns:repeat(2,minmax(0,1fr))}.numbers div:nth-child(3){border-inline-start:none;padding-inline-start:0}.numbers div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* sections */
+section{padding-block:var(--s6) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s2) var(--s4);align-items:end;margin-bottom:var(--s4)}
+@media (max-width:760px){.head{grid-template-columns:1fr}}
+.head .title{display:grid;gap:.6rem}
+h2{font-weight:700;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.08;letter-spacing:-.025em}
+[dir="rtl"] h2{line-height:1.35}
+.head p{color:var(--muted);max-width:48ch}
+
+/* work */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s5) var(--s4)}
+@media (max-width:760px){.grid{grid-template-columns:1fr;gap:var(--s4)}}
+.work{display:grid;gap:1rem;min-width:0;align-content:start}
+.shot{position:relative;padding-bottom:6%;padding-inline-end:11%;display:block}
+.browser{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 22px 44px -28px var(--shadow)}
+.chrome{display:flex;gap:5px;align-items:center;padding:8px 11px;background:var(--line)}
+.chrome i{width:8px;height:8px;border-radius:50%;background:color-mix(in srgb,var(--muted) 55%,transparent)}
+.browser img{display:block;width:100%;height:auto;aspect-ratio:1300/812;object-fit:cover;object-position:top}
+.shot .phone{position:absolute;inset-inline-end:0;bottom:0;width:23%;border-radius:15px;overflow:hidden;border:4px solid var(--fg);background:var(--fg);box-shadow:0 14px 30px -12px var(--shadow)}
+.shot .phone img{display:block;width:100%;height:auto;aspect-ratio:390/844;object-fit:cover;object-position:top}
+@media (prefers-reduced-motion:no-preference){.shot .browser{transition:transform .35s ease}.work:hover .shot .browser{transform:translateY(-4px)}}
+.work-top{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem 1rem;flex-wrap:wrap}
+.work h3{font-size:1.3rem;font-weight:700;letter-spacing:-.015em}
+.work h3 small{display:block;font-family:var(--f-body);font-weight:400;font-size:.95rem;color:var(--muted);letter-spacing:0;margin-top:.15rem}
+.place{font:500 .72rem var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+[dir="rtl"] .place{font-family:var(--f-body);letter-spacing:0;font-size:.82rem}
+.work p{color:var(--muted);font-size:.97rem}
+.feats{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;list-style:none}
+.feats li{font-size:.8rem;padding:.25rem .65rem;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.view{justify-self:start;font-weight:500;font-size:.93rem;color:var(--fg);text-decoration:none;border-bottom:1.5px solid var(--accent);padding-bottom:1px}
+.view:hover{color:var(--accent)}
+
+/* AI band */
+.band{background:var(--band);color:var(--band-fg);margin-top:var(--s6);padding-block:var(--s6)}
+.band section{padding-block:0}
+.band .label{color:var(--band-muted)}
+.band .head p{color:var(--band-muted)}
+.ai-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s3)}
+@media (max-width:860px){.ai-grid{grid-template-columns:1fr}}
+.ai{background:var(--band-surface);border:1px solid var(--band-line);border-radius:18px;padding:var(--s2);display:grid;gap:var(--s2);align-content:start;min-width:0}
+.ai .media{border-radius:12px;overflow:hidden;border:1px solid var(--band-line);background:#0A0F14;aspect-ratio:16/9;display:grid;place-items:center}
+.ai .media video,.ai .media img{display:block;width:100%;height:100%;object-fit:contain}
+.ai-body{display:grid;gap:.8rem;padding:.25rem .5rem .5rem}
+.ai-tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.ai-tags span{font:500 .7rem var(--f-mono);text-transform:uppercase;letter-spacing:.05em;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--band-line);color:var(--band-muted)}
+.ai-tags span:first-child{color:var(--band-accent);border-color:color-mix(in srgb,var(--band-accent) 45%,var(--band-line))}
+[dir="rtl"] .ai-tags span{font-family:var(--f-body);letter-spacing:0;font-size:.78rem}
+.ai h3{font-size:1.3rem;font-weight:700;letter-spacing:-.015em}
+.ai h3 small{display:block;font-family:var(--f-body);font-weight:400;font-size:.95rem;color:var(--band-muted);letter-spacing:0;margin-top:.15rem}
+.ai p{color:var(--band-muted);font-size:.96rem}
+.ai ul{margin:0;padding:0;list-style:none;display:grid;gap:.45rem;font-size:.93rem}
+.ai li{display:grid;grid-template-columns:auto 1fr;gap:.6rem}
+.ai li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--band-accent);margin-top:.6em}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;font:500 .7rem var(--f-mono);text-transform:uppercase;letter-spacing:.04em;color:var(--band-muted)}
+.flow span{border:1px dashed var(--band-line);border-radius:6px;padding:.2rem .5rem}
+.flow b{color:var(--band-accent)}
+[dir="rtl"] .flow b{display:inline-block;transform:scaleX(-1)}
+[dir="rtl"] .flow{font-family:var(--f-body);letter-spacing:0;font-size:.78rem}
+.ai .view{color:var(--band-fg);border-color:var(--band-accent)}
+.ai .view:hover{color:var(--band-accent)}
+.note{font-size:.8rem!important;color:var(--band-muted)}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s3)}
+@media (max-width:900px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.services{grid-template-columns:1fr}}
+.svc{display:grid;gap:.5rem;align-content:start;padding-top:var(--s2);border-top:2px solid var(--fg);min-width:0}
+.svc h3{font-size:1.1rem;font-weight:700}
+.svc p{color:var(--muted);font-size:.93rem}
+.tools{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:var(--s4);align-items:center}
+.tools .label{margin-inline-end:.4rem}
+.chip{font-size:.82rem;padding:.35rem .8rem;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--s5);align-items:start}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:var(--s4)}}
+.about-text{display:grid;gap:var(--s2)}
+.about-text p{font-size:1.08rem;max-width:58ch}
+.about-text p + p{color:var(--muted);font-size:1rem}
+dl{margin:0;display:grid}
+dl div{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:var(--s2);padding-block:.9rem;border-bottom:1px solid var(--line)}
+dl div:first-child{border-top:1px solid var(--line)}
+dt{font:500 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding-top:.2rem}
+[dir="rtl"] dt{font-family:var(--f-body);letter-spacing:0;font-size:.82rem}
+dd{margin:0}
+@media (max-width:420px){dl div{grid-template-columns:1fr;gap:.2rem}}
+
+/* contact */
+.contact{margin-top:var(--s6);border-radius:24px;background:var(--accent);color:var(--accent-ink);padding:var(--s5) var(--s4);display:grid;gap:var(--s2)}
+@media (max-width:600px){.contact{padding:var(--s4) var(--s3)}}
+.contact .label{color:inherit;opacity:.75}
+.contact h2{color:inherit;font-size:clamp(2rem,5vw,3.4rem)}
+.contact p{opacity:.85;max-width:52ch}
+.mail{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:var(--s1)}
+.mail code{font:500 clamp(1rem,2.6vw,1.3rem) var(--f-mono);background:color-mix(in srgb,var(--accent-ink) 14%,transparent);padding:.6rem .9rem;border-radius:10px;user-select:all;overflow-wrap:anywhere;direction:ltr}
+.mail .btn{background:var(--accent-ink);color:var(--accent);border-color:transparent}
+footer{padding-block:var(--s3) var(--s4);color:var(--muted);font-size:.84rem;display:flex;justify-content:space-between;gap:var(--s2);flex-wrap:wrap}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+
+<header class="bar pad">
+  <div class="wrap">
+    <a class="mark" href="#top">Abdullah<span>.</span></a>
+    <nav>
+      <a href="#work" data-i="nWork">Work</a>
+      <a href="#ai" data-i="nAi">AI &amp; automation</a>
+      <a href="#services" data-i="nSkills">Services</a>
+      <a href="#about" data-i="nAbout">About</a>
+      <a href="#contact" data-i="nContact">Contact</a>
+      <button class="lang" id="lang-toggle" type="button">العربية</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="pad"><div class="wrap">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="avail"><span class="dot"></span><span data-i="avail">Open to work · Dubai &amp; Sharjah, UAE</span></span>
+      <h1 data-i="h1">Websites and <em>AI automation</em> for businesses in the UAE.</h1>
+      <p class="who" data-i="who">Abdullah Waleed Khalid <span>· Web designer &amp; automation builder</span></p>
+      <p class="lede" data-i="lede">I design bilingual websites for restaurants, cafés and local shops, and I build AI tools that take repetitive work off their hands, like reading invoices or answering staff questions.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work" data-i="ctaWork">See my work</a>
+        <a class="btn" href="#contact" data-i="ctaHire">Get in touch</a>
+      </div>
+    </div>
+    <div class="fan" aria-hidden="true">
+      <div class="frame f1"><img src="img/shababeek-desk.webp" alt=""></div>
+      <div class="frame f2"><img src="img/emperor-desk.webp" alt=""></div>
+      <div class="frame f3"><img src="img/dayaa-desk.webp" alt=""></div>
+      <div class="phone"><img src="img/baitna-phone.webp" alt=""></div>
+    </div>
+  </div>
+
+  <div class="numbers">
+    <div><b>4</b><span data-i="f1">websites built</span></div>
+    <div><b>2</b><span data-i="f4">AI projects</span></div>
+    <div><b>3</b><span data-i="f5">automated workflows</span></div>
+    <div><b>AR · EN</b><span data-i="f2">bilingual, right-to-left ready</span></div>
+  </div>
+
+  <section id="work">
+    <div class="head">
+      <div class="title"><span class="label" data-i="workL">Selected work</span><h2 data-i="workH">Websites for local businesses</h2></div>
+      <p data-i="workP">Real websites I designed and built for restaurants and cafés in Sharjah. These are screenshots of the actual sites.</p>
+    </div>
+    <div class="grid">
+      <article class="work">
+        <a class="shot" href="al-dayaa/" target="_blank" rel="noopener" aria-label="Open Al Dayaa Al Shamiah website">
+          <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><img src="img/dayaa-desk.webp" alt="Al Dayaa Al Shamiah website on desktop" loading="lazy"></div>
+          <div class="phone"><img src="img/dayaa-phone.webp" alt="Al Dayaa Al Shamiah website on a phone" loading="lazy"></div>
+        </a>
+        <div class="work-top"><h3>Al Dayaa Al Shamiah<small>مطعم الضيعة الشامية</small></h3><span class="place" data-i="pDayaa">Syrian · Al Khalidiya</span></div>
+        <p data-i="dyP">A bilingual site for a Syrian restaurant, built around its real logo and dishes.</p>
+        <ul class="feats"><li data-i="dyA">Searchable menu</li><li data-i="dyB">WhatsApp ordering</li><li data-i="dyC">Call &amp; Talabat bar on phones</li></ul>
+        <a class="view" href="al-dayaa/" target="_blank" rel="noopener" data-i="view">View the live site →</a>
+      </article>
+
+      <article class="work">
+        <a class="shot" href="baitna/" target="_blank" rel="noopener" aria-label="Open Baitna Cafe website">
+          <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><img src="img/baitna-desk.webp" alt="Baitna Cafe website on desktop" loading="lazy"></div>
+          <div class="phone"><img src="img/baitna-phone.webp" alt="Baitna Cafe website on a phone" loading="lazy"></div>
+        </a>
+        <div class="work-top"><h3>Baitna Cafe<small>كافيه بيتنا</small></h3><span class="place" data-i="pBaitna">Rooftop café · Sharjah</span></div>
+        <p data-i="btP">A scroll story: a clock moves from morning coffee to late night as you scroll down the page.</p>
+        <ul class="feats"><li data-i="btA">Scroll animation</li><li data-i="btB">Real photos &amp; video</li><li data-i="btC">Table booking on WhatsApp</li></ul>
+        <a class="view" href="baitna/" target="_blank" rel="noopener" data-i="view">View the live site →</a>
+      </article>
+
+      <article class="work">
+        <a class="shot" href="emperor/" target="_blank" rel="noopener" aria-label="Open Shawarma Emperor Al-Karam website">
+          <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><img src="img/emperor-desk.webp" alt="Shawarma Emperor Al-Karam website on desktop" loading="lazy"></div>
+          <div class="phone"><img src="img/emperor-phone.webp" alt="Shawarma Emperor Al-Karam website on a phone" loading="lazy"></div>
+        </a>
+        <div class="work-top"><h3>Shawarma Emperor Al-Karam<small>شاورما إمبراطور الكرم</small></h3><span class="place" data-i="pEmp">Shawarma · Al Mamzar</span></div>
+        <p data-i="empP">A bold Arabic site with a spinning 3D shawarma spit next to a caricature of the owner.</p>
+        <ul class="feats"><li data-i="empA">3D animation</li><li data-i="empB">Menu with photos</li><li data-i="empC">Order by phone or Talabat</li></ul>
+        <a class="view" href="emperor/" target="_blank" rel="noopener" data-i="view">View the live site →</a>
+      </article>
+
+      <article class="work">
+        <a class="shot" href="shababeek/" target="_blank" rel="noopener" aria-label="Open Shababeek website">
+          <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><img src="img/shababeek-desk.webp" alt="Shababeek website on desktop" loading="lazy"></div>
+          <div class="phone"><img src="img/shababeek-phone.webp" alt="Shababeek website on a phone" loading="lazy"></div>
+        </a>
+        <div class="work-top"><h3>Shababeek<small>مطعم شبابيك</small></h3><span class="place" data-i="pShab">Lebanese · Al Qasba</span></div>
+        <p data-i="shP">A full Arabic and English site for a Lebanese restaurant, switched with one button.</p>
+        <ul class="feats"><li data-i="shA">Menu tabs &amp; search</li><li data-i="shB">Table booking &amp; catering</li><li data-i="shC">Live "open now" status</li></ul>
+        <a class="view" href="shababeek/" target="_blank" rel="noopener" data-i="view">View the live site →</a>
+      </article>
+    </div>
+  </section>
+  </div></div>
+
+  <div class="band pad" id="ai">
+    <div class="wrap">
+    <section>
+      <div class="head">
+        <div class="title"><span class="label" data-i="aiL">AI &amp; automation</span><h2 data-i="aiH">Tools that do the routine work</h2></div>
+        <p data-i="aiP">Two projects where AI does real work for a business: a private assistant for a clinic, and a system that processes invoices on its own.</p>
+      </div>
+      <div class="ai-grid">
+        <article class="ai">
+          <div class="media"><video src="video/clinic-demo.mp4" poster="img/clinic-poster.webp" controls muted playsinline preload="none" aria-label="Demo video of the Smile Clinic AI assistant"></video></div>
+          <div class="ai-body">
+            <div class="ai-tags"><span data-i="tOnp">On-premise AI</span><span data-i="tDemo">Demo project</span></div>
+            <h3>Smile Clinic AI Assistant<small>مساعد عيادة الابتسامة</small></h3>
+            <p data-i="ai0">An assistant that answers staff questions about prices and opening hours, without patient data ever leaving the clinic.</p>
+            <ul>
+              <li data-i="ai1">Runs a Qwen model on Ollama, fully offline</li>
+              <li data-i="ai2">Answers only from the clinic's own information and never invents prices</li>
+              <li data-i="ai4">Password gateway that logs every access attempt</li>
+            </ul>
+            <div class="flow" aria-label="How it works"><span data-i="fl1">Staff browser</span><b aria-hidden="true">→</b><span data-i="fl2">Password gateway</span><b aria-hidden="true">→</b><span>Ollama</span><b aria-hidden="true">→</b><span>Qwen</span></div>
+            <p class="note" data-i="aiNote">Built as a demo for a fictional clinic. Shown as a recording because it runs offline.</p>
+          </div>
+        </article>
+        <article class="ai">
+          <div class="media"><img src="img/n8n-invoice.png" alt="The AI Invoice Processor workflow in n8n, with connected nodes and two decision branches" loading="lazy"></div>
+          <div class="ai-body">
+            <div class="ai-tags"><span data-i="tAuto">Automation</span><span>n8n</span><span data-i="tDemo2">Demo project</span></div>
+            <h3>AI Invoice Processor<small>معالج الفواتير الذكي</small></h3>
+            <p data-i="nv0">Three n8n workflows that read supplier invoices from email, pull out the data with AI and keep the expense sheet up to date.</p>
+            <ul>
+              <li data-i="nv1">Extracts 9 fields from PDF invoices with Google Gemini</li>
+              <li data-i="nv2">Flags incomplete invoices and alerts on bills over AED 5,000</li>
+              <li data-i="nv4">Weekly report: code does the maths, AI writes the email</li>
+            </ul>
+            <div class="flow" aria-label="How it works"><span>Gmail</span><b aria-hidden="true">→</b><span>Gemini</span><b aria-hidden="true">→</b><span>Sheets</span><b aria-hidden="true">→</b><span data-i="fl3">Alerts &amp; report</span></div>
+            <a class="view" href="invoice-automation/" target="_blank" rel="noopener" data-i="viewCase">Read the case study →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    </div>
+  </div>
+
+  <div class="pad"><div class="wrap">
+  <section id="services">
+    <div class="head">
+      <div class="title"><span class="label" data-i="skL">Services</span><h2 data-i="skH">What I can do for you</h2></div>
+    </div>
+    <div class="services">
+      <div class="svc"><h3 data-i="sk1h">Responsive websites</h3><p data-i="sk1p">Clean sites that work on phones, tablets and computers, with clear pages and buttons people find easily.</p></div>
+      <div class="svc"><h3 data-i="sk2h">Arabic &amp; English</h3><p data-i="sk2p">Arabic is my first language. I build right-to-left layouts properly, with Arabic fonts and a clean switch to English.</p></div>
+      <div class="svc"><h3 data-i="sk3h">AI assistants</h3><p data-i="sk3p">Private assistants that answer from your own information, set up with Qwen and Ollama or connected to AI APIs.</p></div>
+      <div class="svc"><h3 data-i="sk4h">Workflow automation</h3><p data-i="sk4p">I connect Gmail, Google Sheets and AI models with n8n, so routine tasks run on their own.</p></div>
+    </div>
+    <div class="tools">
+      <span class="label" data-i="toolsL">Tools</span>
+      <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">n8n</span><span class="chip">Google Gemini</span><span class="chip">Qwen</span><span class="chip">Ollama</span><span class="chip">Google Sheets</span><span class="chip" data-i="c2">RTL layouts</span><span class="chip" data-i="c5">AI prompting</span>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="head">
+      <div class="title"><span class="label" data-i="abL">About</span><h2 data-i="abH">A bit about me</h2></div>
+    </div>
+    <div class="about">
+      <div class="about-text">
+        <p data-i="ab1">Before web design, I worked a year in customer service, a year in data entry, and part-time as event staff. That work showed me how small businesses run day to day, and it is why I like building tools that save people time.</p>
+        <p data-i="ab2">I graduated from Grade 12 in the Advanced stream at Al Ahlia Charity School, Dubai, with 97.1%. I'm looking to join an agency or company where I can grow in web design, AI or automation, and I'm open to freelance projects.</p>
+      </div>
+      <dl>
+        <div><dt data-i="dl1">Based in</dt><dd data-i="dd1">Dubai &amp; Sharjah, UAE</dd></div>
+        <div><dt data-i="dl2">Languages</dt><dd data-i="dd2">Arabic (native) · English</dd></div>
+        <div><dt data-i="dl3">Certificate</dt><dd data-i="dd3">AI Prompting · One Million Prompters, Dubai Centre for AI</dd></div>
+        <div><dt data-i="dl4">Open to</dt><dd data-i="dd4">Full-time roles, agency work, freelance projects</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <span class="label" data-i="ctL">Contact</span>
+    <h2 data-i="ctH">Let's work together</h2>
+    <p data-i="ctP">Hiring, or need a website or an automation for your business? Send me an email.</p>
+    <div class="mail">
+      <code id="email">uae0502049070@gmail.com</code>
+      <button class="btn" id="copy-email" type="button" data-i="copy">Copy email</button>
+    </div>
+  </section>
+
+  <footer><span>© 2026 Abdullah Waleed Khalid</span><span data-i="foot">Designed and built by me</span></footer>
+  </div></div>
+</main>
+
+<script>
+const AR = {
+  nWork:"أعمالي", nAi:"الذكاء الاصطناعي", nSkills:"خدماتي", nAbout:"عنّي", nContact:"تواصل",
+  avail:"متاح للعمل · دبي والشارقة، الإمارات",
+  h1:"مواقع و<em>أتمتة بالذكاء الاصطناعي</em> للأعمال في الإمارات.",
+  who:"عبدالله وليد خالد <span>· مصمم مواقع ومطوّر أتمتة</span>",
+  lede:"أصمم مواقع بلغتين للمطاعم والكافيهات والمحلات، وأبني أدوات ذكاء اصطناعي تخفف عنهم الشغل المتكرر، مثل قراءة الفواتير أو الإجابة على أسئلة الموظفين.",
+  ctaWork:"شاهد أعمالي", ctaHire:"تواصل معي",
+  f1:"مواقع منفّذة", f4:"مشاريع ذكاء اصطناعي", f5:"أنظمة أتمتة", f2:"بلغتين، ومن اليمين لليسار",
+  workL:"أعمال مختارة", workH:"مواقع لأعمال محلية", workP:"مواقع حقيقية صممتها وبنيتها لمطاعم وكافيهات في الشارقة. هذه صور من المواقع نفسها.",
+  pDayaa:"سوري · الخالدية", dyP:"موقع بلغتين لمطعم سوري، مبني على شعار المطعم وأطباقه الحقيقية.", dyA:"قائمة طعام بالبحث", dyB:"طلب عبر واتساب", dyC:"شريط اتصال وطلبات على الجوال",
+  pBaitna:"كافيه على السطح · الشارقة", btP:"قصة مع التمرير: ساعة تتحرك من قهوة الصباح إلى آخر الليل وأنت تنزل في الصفحة.", btA:"حركة مع التمرير", btB:"صور وفيديو حقيقية", btC:"حجز طاولة عبر واتساب",
+  pEmp:"شاورما · الممزر", empP:"موقع عربي جريء فيه سيخ شاورما ثلاثي الأبعاد يدور بجانب كاريكاتير صاحب المحل.", empA:"حركة ثلاثية الأبعاد", empB:"قائمة بالصور", empC:"اطلب بالهاتف أو طلبات",
+  pShab:"لبناني · القصباء", shP:"موقع عربي وإنجليزي كامل لمطعم لبناني، يتبدل بزر واحد.", shA:"تصنيفات وبحث في القائمة", shB:"حجز طاولة وتموين", shC:"حالة \"مفتوح الآن\" مباشرة",
+  view:"شاهد الموقع ←",
+  aiL:"الذكاء الاصطناعي والأتمتة", aiH:"أدوات تقوم بالشغل الروتيني", aiP:"مشروعان يقوم فيهما الذكاء الاصطناعي بعمل حقيقي: مساعد خاص لعيادة، ونظام يعالج الفواتير لوحده.",
+  tOnp:"ذكاء اصطناعي داخلي", tDemo:"مشروع تجريبي", tDemo2:"مشروع تجريبي", tAuto:"أتمتة",
+  ai0:"مساعد يجيب الموظفين عن الأسعار ومواعيد العمل، دون أن تخرج بيانات المرضى من العيادة.",
+  ai1:"يشغّل نموذج Qwen على Ollama بدون إنترنت", ai2:"يجيب فقط من معلومات العيادة ولا يخترع الأسعار", ai4:"بوابة بكلمة سر تسجّل كل محاولة دخول",
+  fl1:"متصفح الموظف", fl2:"بوابة بكلمة سر", aiNote:"مشروع تجريبي لعيادة افتراضية. معروض بفيديو لأنه يعمل بدون إنترنت.",
+  nv0:"ثلاثة أنظمة في n8n تقرأ فواتير الموردين من الإيميل، وتستخرج البيانات بالذكاء الاصطناعي، وتحدّث جدول المصاريف تلقائياً.",
+  nv1:"يستخرج ٩ حقول من فواتير PDF باستخدام Google Gemini", nv2:"يكشف الفواتير الناقصة وينبّه للفواتير فوق ٥٬٠٠٠ درهم", nv4:"تقرير أسبوعي: الكود يحسب والذكاء الاصطناعي يكتب الإيميل",
+  fl3:"تنبيهات وتقرير", viewCase:"اقرأ دراسة الحالة ←",
+  skL:"الخدمات", skH:"شنو أگدر أسويلك",
+  sk1h:"مواقع متجاوبة", sk1p:"مواقع مرتبة تعمل على الجوال والتابلت والكمبيوتر، بصفحات واضحة وأزرار سهلة الوصول.",
+  sk2h:"عربي وإنجليزي", sk2p:"العربية لغتي الأم. أبني التصاميم من اليمين لليسار بشكل صحيح، بخطوط عربية وتبديل سهل للإنجليزية.",
+  sk3h:"مساعدات ذكاء اصطناعي", sk3p:"مساعدات خاصة تجيب من معلوماتك أنت، باستخدام Qwen وOllama أو عبر واجهات API.",
+  sk4h:"أتمتة سير العمل", sk4p:"أربط Gmail وGoogle Sheets ونماذج الذكاء الاصطناعي باستخدام n8n، حتى تشتغل المهام الروتينية لوحدها.",
+  toolsL:"الأدوات", c2:"تصميم من اليمين لليسار", c5:"كتابة الأوامر للذكاء الاصطناعي",
+  abL:"عنّي", abH:"نبذة عني",
+  ab1:"قبل تصميم المواقع، عملت سنة في خدمة العملاء، وسنة في إدخال البيانات، وبدوام جزئي ضمن فرق الفعاليات. هذه التجارب علّمتني شلون تشتغل الأعمال الصغيرة يومياً، ولهذا أحب أبني أدوات توفّر وقت الناس.",
+  ab2:"تخرجت من الصف الثاني عشر المسار المتقدم في مدرسة الأهلية الخيرية بدبي بنسبة ٩٧٫١٪. أتطلع للانضمام إلى وكالة أو شركة أتطور فيها في تصميم المواقع أو الذكاء الاصطناعي أو الأتمتة، ومنفتح على المشاريع الحرة.",
+  dl1:"المكان", dd1:"دبي والشارقة، الإمارات", dl2:"اللغات", dd2:"العربية (اللغة الأم) · الإنجليزية",
+  dl3:"الشهادة", dd3:"كتابة الأوامر للذكاء الاصطناعي · مليون مبرمج أوامر، مركز دبي للذكاء الاصطناعي",
+  dl4:"متاح لـ", dd4:"وظيفة بدوام كامل، العمل مع وكالة، مشاريع حرة",
+  ctL:"تواصل", ctH:"لنعمل معاً", ctP:"تبحث عن موظف، أو تحتاج موقعاً أو نظام أتمتة لشغلك؟ راسلني على الإيميل.",
+  copy:"نسخ الإيميل", copied:"تم النسخ", foot:"صممته وبنيته بنفسي"
+};
+const EN = {};
+document.querySelectorAll("[data-i]").forEach(el => { EN[el.dataset.i] = el.innerHTML; });
+EN.copied = "Copied";
+let lang = "en";
+function apply(l){
+  lang = l;
+  const d = l === "ar" ? AR : EN;
+  document.documentElement.lang = l;
+  document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-i]").forEach(el => { const v = d[el.dataset.i]; if (v) el.innerHTML = v; });
+  document.getElementById("lang-toggle").textContent = l === "ar" ? "English" : "العربية";
+  try { localStorage.setItem("lang", l); } catch(e) {}
+}
+document.getElementById("lang-toggle").addEventListener("click", () => apply(lang === "en" ? "ar" : "en"));
+try { if (localStorage.getItem("lang") === "ar") apply("ar"); } catch(e) {}
+
+const copyBtn = document.getElementById("copy-email");
+copyBtn.addEventListener("click", () => {
+  const text = document.getElementById("email").textContent;
+  const done = () => { copyBtn.textContent = (lang === "ar" ? AR : EN).copied; setTimeout(() => { copyBtn.textContent = (lang === "ar" ? AR : EN).copy; }, 1800); };
+  const fallback = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById("email")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+  try { navigator.clipboard.writeText(text).then(done, fallback); } catch(e) { fallback(); }
+});
+</script>
+
+</body></html>
