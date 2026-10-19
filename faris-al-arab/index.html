@@ -1,0 +1,427 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Faris Al Arab Perfumes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&family=Cormorant+Garamond:wght@500;600&display=swap">
+<style>
+/* Layout: classic luxury shop — sticky header, split hero with a lit bottle, filterable product grid, cart drawer with Ziina checkout. Single dark look. */
+:root{
+  --bg:#0B0B0C; --bg-2:#131315; --card:#18181B; --line:#2A2A2E;
+  --text:#F3EFE8; --muted:#A49E95; --gold:#C9A27A; --gold-2:#E3C49F;
+  --display:"Amiri","Traditional Arabic",serif;
+  --body:"Tajawal","Segoe UI",system-ui,sans-serif;
+  --display-en:"Cormorant Garamond",Georgia,serif;
+  --r:18px; --ease:cubic-bezier(.22,.8,.24,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.site[data-lang="ar"] [data-l="en"],.site[data-lang="en"] [data-l="ar"]{display:none!important}
+.site[data-lang="en"] .disp{font-family:var(--display-en);letter-spacing:-.01em}
+.disp{font-family:var(--display);font-weight:700}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:96px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{margin:0;font-size:clamp(2rem,1.4rem + 2vw,2.8rem);line-height:1.15}
+.sec-head p{margin:6px 0 0;color:var(--muted);max-width:46ch}
+.kicker{color:var(--gold);font-weight:500;font-size:.95rem;margin:0 0 8px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;border:1px solid transparent;font-weight:700;cursor:pointer;transition:transform .2s var(--ease),background .25s,border-color .25s,color .25s}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--gold);color:#1A140E}
+.btn-gold:hover{background:var(--gold-2)}
+.btn-ghost{border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-2)}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:rgba(11,11,12,.92)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(11,11,12,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:42px;height:42px;border-radius:50%;background:var(--text);display:grid;place-items:center;flex:none}
+.mark svg{width:62%;height:auto}
+.brand b{display:block;font-family:var(--display);font-size:1.35rem;line-height:1}
+.brand small{display:block;font-size:.68rem;letter-spacing:.22em;color:var(--muted);margin-top:4px}
+.links{display:flex;gap:28px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.tools{display:flex;align-items:center;gap:10px}
+.icon-btn{height:42px;min-width:42px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:border-color .2s}
+.icon-btn:hover{border-color:var(--gold)}
+.badge{min-width:20px;height:20px;border-radius:10px;background:var(--gold);color:#1A140E;font-size:.75rem;font-weight:700;display:grid;place-items:center;padding:0 6px;transition:transform .3s var(--ease)}
+.badge.pop{transform:scale(1.35)}
+
+/* hero */
+.hero{padding-block:72px 96px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:60vw;height:60vw;max-width:760px;max-height:760px;background:radial-gradient(closest-side,rgba(201,162,122,.18),transparent);pointer-events:none}
+.site[dir="ltr"] .hero::before{inset:-20% auto auto -10%}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative}
+.hero h1{margin:0 0 20px;font-size:clamp(2.8rem,1.6rem + 4.2vw,5rem);line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{margin:0 0 32px;color:var(--muted);font-size:1.15rem;max-width:44ch}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:32px;margin-top:44px;padding-top:28px;border-top:1px solid var(--line);flex-wrap:wrap}
+.facts b{display:block;font-size:1.05rem}
+.facts span{color:var(--muted);font-size:.9rem}
+
+.showcase{position:relative;aspect-ratio:1/1.05;border-radius:28px;background:linear-gradient(160deg,#1E1A16,#0F0E0D 70%);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.showcase::after{content:"";position:absolute;left:50%;bottom:16%;width:62%;height:9%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(0,0,0,.7),transparent);}
+.spot{position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,rgba(227,196,159,.22),transparent 55%)}
+.pedestal{position:absolute;bottom:12%;left:50%;transform:translateX(-50%);width:58%;height:12%;border-radius:50%;background:linear-gradient(#2A2520,#151311);box-shadow:inset 0 2px 0 rgba(255,255,255,.06)}
+.hero-bottle{position:relative;z-index:1;margin-bottom:12%;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.tag{position:absolute;z-index:2;background:rgba(24,24,27,.85);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:.88rem;line-height:1.4}
+.tag b{display:block;color:var(--gold-2)}
+.tag.t1{top:12%;inset-inline-start:8%}
+.tag.t2{bottom:28%;inset-inline-end:7%}
+
+/* bottle drawn in CSS */
+.bottle{--c1:#B87A3E;--c2:#5A2E14;--s:1;position:relative;width:calc(110px*var(--s));height:calc(150px*var(--s));border-radius:calc(26px*var(--s)) calc(26px*var(--s)) calc(30px*var(--s)) calc(30px*var(--s));background:linear-gradient(135deg,var(--c1),var(--c2));box-shadow:inset calc(10px*var(--s)) 0 calc(18px*var(--s)) rgba(255,255,255,.18),inset calc(-12px*var(--s)) calc(-10px*var(--s)) calc(24px*var(--s)) rgba(0,0,0,.45),0 calc(24px*var(--s)) calc(50px*var(--s)) rgba(0,0,0,.5)}
+.bottle::before{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);width:34%;height:16%;background:linear-gradient(90deg,#8E8274,#D9CCBA,#8E8274);border-radius:4px 4px 0 0}
+.bottle::after{content:"";position:absolute;bottom:116%;left:50%;transform:translateX(-50%);width:48%;height:44%;background:linear-gradient(90deg,#1A1714,#4A4038 45%,#1A1714);border-radius:calc(40px*var(--s)) calc(40px*var(--s)) calc(8px*var(--s)) calc(8px*var(--s))}
+.bottle .label{position:absolute;inset:auto 14% 26% 14%;height:26%;border-radius:6px;background:rgba(243,239,232,.92);display:grid;place-items:center;color:#1A140E;font-family:var(--display);font-weight:700;font-size:calc(15px*var(--s));line-height:1}
+.box{--c1:#3A2C22;--c2:#1C1511;position:relative;width:150px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--c1),var(--c2));box-shadow:inset 0 -10px 20px rgba(0,0,0,.4),0 20px 40px rgba(0,0,0,.45)}
+.box::before{content:"";position:absolute;inset:-14px -6px auto;height:26px;border-radius:10px;background:linear-gradient(90deg,#8E8274,#D9CCBA,#8E8274)}
+.box .label{position:absolute;inset:34% 18% auto;height:34%;border-radius:6px;background:rgba(243,239,232,.92);display:grid;place-items:center;color:#1A140E;font-family:var(--display);font-weight:700;font-size:14px}
+
+/* categories + grid */
+.filters{display:flex;gap:10px;flex-wrap:wrap}
+.chip{height:42px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:none;cursor:pointer;color:var(--muted);transition:all .2s}
+.chip:hover{color:var(--text);border-color:#4A4A50}
+.chip[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .35s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:#3D3833}
+.card .vis{height:230px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 40%,var(--glow,rgba(201,162,122,.18)),transparent 65%),var(--bg-2)}
+.card .vis .bottle,.card .vis .box{transition:transform .5s var(--ease)}
+.card:hover .vis .bottle,.card:hover .vis .box{transform:translateY(-6px) rotate(-2deg)}
+.ribbon{position:absolute;top:14px;inset-inline-start:14px;font-size:.78rem;padding:4px 10px;border-radius:999px;background:rgba(201,162,122,.15);color:var(--gold-2);border:1px solid rgba(201,162,122,.3)}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card h3{margin:0;font-size:1.15rem;font-weight:700;line-height:1.3}
+.card .note{margin:-6px 0 0;color:var(--muted);font-size:.92rem}
+.sizes{display:flex;gap:6px}
+.size{flex:1;height:36px;border-radius:10px;border:1px solid var(--line);background:none;cursor:pointer;font-size:.85rem;color:var(--muted);transition:all .2s}
+.size:hover{color:var(--text)}
+.size[aria-pressed="true"]{border-color:var(--gold);color:var(--gold-2);background:rgba(201,162,122,.08)}
+.card .foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:6px}
+.price{font-size:1.25rem;font-weight:700}
+.price small{font-size:.8rem;color:var(--muted);font-weight:400}
+.add{height:42px;padding:0 18px;border-radius:999px;border:0;background:var(--gold);color:#1A140E;font-weight:700;cursor:pointer;transition:transform .2s var(--ease),background .2s}
+.add:hover{background:var(--gold-2)}
+.add:active{transform:scale(.94)}
+.add.done{background:#7FA37A}
+
+/* why + steps */
+.why{background:var(--bg-2);border-block:1px solid var(--line)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feat div{padding:28px;border-radius:var(--r);background:var(--card);border:1px solid var(--line)}
+.feat svg{width:40px;height:40px;color:var(--gold);margin-bottom:14px}
+.feat h3{margin:0 0 6px;font-size:1.15rem}
+.feat p{margin:0;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.steps div{position:relative;padding:28px 28px 28px;border-radius:var(--r);border:1px solid var(--line)}
+.steps .n{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(201,162,122,.12);color:var(--gold-2);font-weight:700;margin-bottom:16px}
+.steps h3{margin:0 0 6px;font-size:1.15rem}
+.steps p{margin:0;color:var(--muted)}
+.ziina{display:inline-flex;align-items:center;gap:8px;margin-top:28px;padding:10px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--muted);font-size:.92rem}
+.ziina b{color:var(--text)}
+
+/* about + contact */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-art{aspect-ratio:4/3;border-radius:24px;background:linear-gradient(160deg,#1E1A16,#0F0E0D);border:1px solid var(--line);display:grid;place-items:center;position:relative;overflow:hidden}
+.about-art svg{width:42%;height:auto;opacity:.95}
+.about-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(227,196,159,.16),transparent 60%)}
+.about h2{margin:0 0 18px;font-size:clamp(2rem,1.4rem + 2vw,2.8rem);line-height:1.2}
+.about p{color:var(--muted);margin:0 0 14px;max-width:52ch}
+.contact-card{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.contact-card > div{padding:26px;border-radius:var(--r);background:var(--card);border:1px solid var(--line)}
+.contact-card span{display:block;color:var(--muted);font-size:.9rem;margin-bottom:6px}
+.contact-card b{font-size:1.1rem;font-weight:500}
+.contact-card a:hover{color:var(--gold-2)}
+
+footer{border-top:1px solid var(--line);padding-block:40px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+
+/* cart drawer */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .3s;z-index:70}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(420px,100%);background:var(--bg-2);border-inline-start:1px solid var(--line);z-index:80;display:flex;flex-direction:column;transform:translateX(105%);transition:transform .45s var(--ease);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.site[dir="rtl"] .drawer{transform:translateX(-105%)}
+.open .drawer{transform:none!important}
+.open .scrim{opacity:1;pointer-events:auto}
+.d-head{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid var(--line)}
+.d-head h3{margin:0;font-size:1.25rem}
+.d-items{flex:1;overflow:auto;padding:12px 22px;display:flex;flex-direction:column;gap:12px}
+.item{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.item b{font-weight:500}
+.item small{color:var(--muted)}
+.qty{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;padding:2px}
+.qty button{width:30px;height:30px;border-radius:50%;border:0;background:none;cursor:pointer}
+.qty button:hover{background:var(--line)}
+.empty{text-align:center;color:var(--muted);padding:48px 12px}
+.d-foot{padding:18px 22px 22px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.opt{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt button{height:42px;border-radius:12px;border:1px solid var(--line);background:none;cursor:pointer;color:var(--muted)}
+.opt button[aria-pressed="true"]{border-color:var(--gold);color:var(--gold-2)}
+.sum{display:flex;justify-content:space-between;font-size:1.15rem}
+.sum b{font-size:1.35rem}
+.fine{margin:0;color:var(--muted);font-size:.8rem;text-align:center}
+
+/* entrance */
+@media (prefers-reduced-motion:no-preference){
+  .reveal{animation:up .8s var(--ease) both}
+  .reveal.d1{animation-delay:.08s}.reveal.d2{animation-delay:.16s}.reveal.d3{animation-delay:.24s}
+  @supports (animation-timeline:view()){
+    .card,.feat div,.steps div,.contact-card > div{animation:up both var(--ease);animation-timeline:view();animation-range:entry 0% entry 45%}
+  }
+}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-bottle{animation:none}html{scroll-behavior:auto}}
+
+/* responsive */
+@media (max-width:900px){
+  .links{display:none}
+  .hero-grid,.about-grid{grid-template-columns:1fr}
+  .showcase{max-width:520px;width:100%;margin-inline:auto}
+  .feat,.steps,.contact-card{grid-template-columns:1fr}
+  section{padding-block:72px}
+}
+@media (max-width:480px){
+  .brand small{display:none}
+  .cta-row .btn{flex:1}
+  .facts{gap:20px}
+  .tag{font-size:.8rem}
+}
+</style>
+
+<div class="site" id="site" lang="ar" dir="rtl" data-lang="ar">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="horse" viewBox="0 0 200 270"><path d="M62 222 L138 222 L136 208 L126 199 C127 170 136 152 147 126 C157 102 160 80 151 62 C141 43 122 31 100 29 L95 12 L85 30 C69 35 57 46 49 62 L29 93 C25 101 29 109 38 109 L53 105 C60 103 65 106 66 112 C56 131 62 151 77 163 C70 177 67 191 70 204 L64 210 Z"/><rect x="48" y="224" width="104" height="14" rx="3"/><rect x="38" y="240" width="124" height="18" rx="3"/></symbol>
+</defs></svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Faris Al Arab">
+      <span class="mark"><svg viewBox="0 0 200 270"><use href="#horse" fill="#0B0B0C"/></svg></span>
+      <span><b>فارس العرب</b><small>FARIS AL ARAB</small></span>
+    </a>
+    <nav class="links">
+      <a href="#shop"><span data-l="ar">المتجر</span><span data-l="en">Shop</span></a>
+      <a href="#how"><span data-l="ar">طريقة الطلب</span><span data-l="en">How to order</span></a>
+      <a href="#about"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="#contact"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="langBtn" type="button"><span data-l="ar">EN</span><span data-l="en">ع</span></button>
+      <button class="icon-btn" id="cartBtn" type="button" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="badge num" id="count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker reveal"><span data-l="ar">عطور وعود · الشويهين، الشارقة</span><span data-l="en">Perfume & oud · Al Shuwaiheen, Sharjah</span></p>
+        <h1 class="disp reveal d1"><span data-l="ar">عطرٌ يليق <em>بالفارس</em></span><span data-l="en">A scent worthy of <em>the knight</em></span></h1>
+        <p class="lead reveal d2"><span data-l="ar">دهن عود أصلي، بخور ومعطّرات مختارة بعناية. اطلب اونلاين وادفع بسهولة عبر Ziina، ويوصلك لين باب البيت.</span><span data-l="en">Genuine oud oil, bakhoor and hand-picked perfume oils. Order online, pay easily with Ziina, and we deliver to your door.</span></p>
+        <div class="cta-row reveal d3">
+          <a class="btn btn-gold" href="#shop"><span data-l="ar">تسوّق الآن</span><span data-l="en">Shop now</span></a>
+          <a class="btn btn-ghost" href="#how"><span data-l="ar">طريقة الطلب</span><span data-l="en">How it works</span></a>
+        </div>
+        <div class="facts reveal d3">
+          <div><b><span data-l="ar">بالتولة</span><span data-l="en">By the tola</span></b><span><span data-l="ar">من ربع تولة لتولة كاملة</span><span data-l="en">From a quarter to a full tola</span></span></div>
+          <div><b>Ziina</b><span><span data-l="ar">دفع آمن بالبطاقة</span><span data-l="en">Secure card payment</span></span></div>
+          <div><b><span data-l="ar">توصيل</span><span data-l="en">Delivery</span></b><span><span data-l="ar">داخل الشارقة أو استلام</span><span data-l="en">In Sharjah or pick-up</span></span></div>
+        </div>
+      </div>
+      <div class="showcase reveal d2" aria-hidden="true">
+        <div class="spot"></div>
+        <div class="pedestal"></div>
+        <div class="hero-bottle"><div class="bottle" style="--s:1.55;--c1:#C08446;--c2:#4E2610"><span class="label">فارس</span></div></div>
+        <div class="tag t1"><b><span data-l="ar">دهن عود كمبودي</span><span data-l="en">Cambodian oud</span></b><span data-l="ar">الأكثر طلباً</span><span data-l="en">Best seller</span></div>
+        <div class="tag t2 num"><b><span data-l="ar">٤٥٠ درهم</span><span data-l="en">450 AED</span></b><span data-l="ar">للتولة</span><span data-l="en">per tola</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker"><span data-l="ar">المتجر</span><span data-l="en">The shop</span></p>
+          <h2 class="disp"><span data-l="ar">اختر عطرك</span><span data-l="en">Choose your scent</span></h2>
+          <p><span data-l="ar">التولة حوالي ١٢ مللي. اختر الكمية وأضفها للسلة.</span><span data-l="en">A tola is about 12 ml. Pick a size and add it to your cart.</span></p>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="kicker"><span data-l="ar">ليش فارس العرب</span><span data-l="en">Why Faris Al Arab</span></p>
+        <h2 class="disp"><span data-l="ar">جودة تشمّها من أول مرة</span><span data-l="en">Quality you notice at once</span></h2>
+      </div></div>
+      <div class="feat">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 6.5 5 10a5 5 0 0 1-10 0c0-3.5 2-6 5-10Z"/></svg>
+          <h3><span data-l="ar">زيوت أصلية</span><span data-l="en">Genuine oils</span></h3><p><span data-l="ar">نختار العود بأنفسنا ونجرّبه قبل ما يوصل الرف.</span><span data-l="en">We choose and test every oud before it reaches the shelf.</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg>
+          <h3><span data-l="ar">دفع سهل وآمن</span><span data-l="en">Easy, safe payment</span></h3><p><span data-l="ar">ادفع ببطاقتك عن طريق Ziina بدون تعقيد.</span><span data-l="en">Pay by card through Ziina in a few taps.</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+          <h3><span data-l="ar">توصيل أو استلام</span><span data-l="en">Delivery or pick-up</span></h3><p><span data-l="ar">نوصّل داخل الشارقة، أو استلم طلبك من المحل.</span><span data-l="en">We deliver across Sharjah, or collect from the shop.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="kicker"><span data-l="ar">طريقة الطلب</span><span data-l="en">How to order</span></p>
+        <h2 class="disp"><span data-l="ar">ثلاث خطوات وبس</span><span data-l="en">Just three steps</span></h2>
+      </div></div>
+      <div class="steps">
+        <div><span class="n">١</span><h3><span data-l="ar">اختر عطرك</span><span data-l="en">Pick your scent</span></h3><p><span data-l="ar">تصفّح المتجر واختر الكمية اللي تناسبك.</span><span data-l="en">Browse the shop and choose the size you want.</span></p></div>
+        <div><span class="n">٢</span><h3><span data-l="ar">ادفع عبر Ziina</span><span data-l="en">Pay with Ziina</span></h3><p><span data-l="ar">من السلة اضغط الدفع وأكمل ببطاقتك.</span><span data-l="en">From the cart, tap pay and finish with your card.</span></p></div>
+        <div><span class="n">٣</span><h3><span data-l="ar">استلم طلبك</span><span data-l="en">Get your order</span></h3><p><span data-l="ar">نجهّزه نفس اليوم ونوصّله لك أو تستلمه من المحل.</span><span data-l="en">We pack it the same day, then deliver or hold it for pick-up.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" style="padding-top:24px">
+    <div class="wrap about-grid">
+      <div class="about-art"><svg viewBox="0 0 200 270"><use href="#horse" fill="#F3EFE8"/></svg></div>
+      <div>
+        <p class="kicker"><span data-l="ar">من نحن</span><span data-l="en">About us</span></p>
+        <h2 class="disp"><span data-l="ar">محل عطور من قلب الشويهين</span><span data-l="en">A perfume shop in the heart of Al Shuwaiheen</span></h2>
+        <p><span data-l="ar">الفارس عند العرب هو اللي يوفي بكلمته، ومن هنا جا اسمنا. في محلنا بحي الغرب نبيع دهن العود والبخور والمعطّرات مثل ما تنباع في السوق: تشمّ، تختار، وتاخذ الكمية اللي تبيها.</span><span data-l="en">To Arabs, a faris is a knight who keeps his word, and that is where our name comes from. In our Hay Al Gharb shop we sell oud oil, bakhoor and perfume oils the souq way: smell, choose, and take the amount you want.</span></p>
+        <p><span data-l="ar">والحين نفس التجربة صارت اونلاين، لكل من ما يقدر يوصل لنا.</span><span data-l="en">Now the same experience is online, for everyone who cannot visit us.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:24px">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="kicker"><span data-l="ar">تواصل معنا</span><span data-l="en">Contact</span></p>
+        <h2 class="disp"><span data-l="ar">نتشرّف بزيارتك</span><span data-l="en">We'd love to see you</span></h2>
+      </div></div>
+      <div class="contact-card">
+        <div><span data-l="ar">العنوان</span><span data-l="en">Address</span><b><span data-l="ar">الشويهين، حي الغرب، الشارقة</span><span data-l="en">Al Shuwaiheen, Hay Al Gharb, Sharjah</span></b></div>
+        <div><span data-l="ar">أوقات العمل</span><span data-l="en">Opening hours</span><b class="num"><span data-l="ar">يومياً ١٠ص – ١١م</span><span data-l="en">Daily 10 am – 11 pm</span></b></div>
+        <div><span data-l="ar">واتساب</span><span data-l="en">WhatsApp</span><b><a href="https://wa.me/971500000000" target="_blank" rel="noopener" dir="ltr" class="num">+971 50 000 0000</a></b></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="num"><span data-l="ar">© ٢٠٢٦ فارس العرب للعطور</span><span data-l="en">© 2026 Faris Al Arab Perfumes</span></span>
+    <span><span data-l="ar">الدفع عبر Ziina</span><span data-l="en">Payments by Ziina</span></span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="d-head">
+    <h3><span data-l="ar">سلة الطلب</span><span data-l="en">Your cart</span></h3>
+    <button class="icon-btn" id="closeCart" type="button" aria-label="Close">✕</button>
+  </div>
+  <div class="d-items" id="items"></div>
+  <div class="d-foot">
+    <div class="opt" id="opt">
+      <button type="button" data-o="del" aria-pressed="true"><span data-l="ar">توصيل (+١٥ درهم)</span><span data-l="en">Delivery (+15 AED)</span></button>
+      <button type="button" data-o="pick" aria-pressed="false"><span data-l="ar">استلام من المحل</span><span data-l="en">Pick up</span></button>
+    </div>
+    <div class="sum num"><span><span data-l="ar">المجموع</span><span data-l="en">Total</span></span><b id="total">0</b></div>
+    <a class="btn btn-gold" href="#checkout" id="pay"><span data-l="ar">ادفع عبر Ziina</span><span data-l="en">Pay with Ziina</span></a>
+    <p class="fine"><span data-l="ar">الأسعار تجريبية · زر الدفع يُربط برابط Ziina قبل الإطلاق</span><span data-l="en">Sample prices · the pay button links to Ziina before launch</span></p>
+  </div>
+</aside>
+</div>
+
+<script>
+(function(){
+  const site=document.getElementById('site');
+  const P=[
+    {id:'cam',g:'oil',t:'b',c1:'#C08446',c2:'#4E2610',ar:'دهن عود كمبودي',en:'Cambodian oud oil',nar:'جلدي ودخاني، ثبات عالي',nen:'Leathery, smoky, long-lasting',p:450,tag:{ar:'الأكثر طلباً',en:'Best seller'}},
+    {id:'ind',g:'oil',t:'b',c1:'#8A4A26',c2:'#2E150A',ar:'دهن عود هندي',en:'Indian oud oil',nar:'عميق وقوي',nen:'Deep and bold',p:380},
+    {id:'mal',g:'oil',t:'b',c1:'#C9A06A',c2:'#6A4220',ar:'دهن عود ماليزي',en:'Malaysian oud oil',nar:'خفيف للاستخدام اليومي',nen:'Light, for every day',p:260},
+    {id:'ros',g:'att',t:'b',c1:'#D98A93',c2:'#7A2E3A',ar:'ورد طائفي',en:'Taifi rose oil',nar:'ورد صافي وفاخر',nen:'Pure, rich rose',p:220,tag:{ar:'جديد',en:'New'}},
+    {id:'msk',g:'att',t:'b',c1:'#F1ECE4',c2:'#A9A196',ar:'مسك أبيض',en:'White musk',nar:'ناعم ونظيف',nen:'Soft and clean',p:90},
+    {id:'amb',g:'att',t:'b',c1:'#E0A85A',c2:'#7A4612',ar:'عنبر',en:'Amber',nar:'دافئ وحلو',nen:'Warm and sweet',p:150},
+    {id:'bak',g:'bak',t:'x',c1:'#4A3426',c2:'#1C1511',ar:'بخور معمول',en:'Ma\'amoul bakhoor',nar:'عود ومسك وورد · ٥٠ غرام',nen:'Oud, musk, rose · 50 g',p:85},
+    {id:'duk',g:'bak',t:'x',c1:'#5E3B24',c2:'#24160D',ar:'عود معطّر (دخون)',en:'Perfumed oud chips',nar:'دخان هادئ للمجلس · ٥٠ غرام',nen:'Calm smoke for the majlis · 50 g',p:120}
+  ];
+  const G=[{id:'all',ar:'الكل',en:'All'},{id:'oil',ar:'دهن العود',en:'Oud oils'},{id:'att',ar:'المعطّرات',en:'Perfume oils'},{id:'bak',ar:'البخور',en:'Bakhoor'}];
+  const SIZES=[{f:.25,ar:'ربع',en:'¼'},{f:.5,ar:'نص',en:'½'},{f:1,ar:'تولة',en:'1 tola'}];
+  let filter='all',delivery=true;const sel={};const cart=[];
+  const L=()=>site.dataset.lang,ar=()=>L()==='ar';
+  const n=v=>Math.round(v).toLocaleString(ar()?'ar-AE':'en-US');
+  const aed=v=>ar()?n(v)+' درهم':n(v)+' AED';
+
+  function renderFilters(){document.getElementById('filters').innerHTML=G.map(g=>`<button class="chip" type="button" data-g="${g.id}" aria-pressed="${g.id===filter}">${g[L()]}</button>`).join('')}
+  function priceOf(p){return p.t==='x'?p.p:p.p*(sel[p.id]??1)}
+  function renderGrid(){
+    document.getElementById('grid').innerHTML=P.filter(p=>filter==='all'||p.g===filter).map(p=>{
+      const vis=p.t==='b'?`<div class="bottle" style="--c1:${p.c1};--c2:${p.c2}"><span class="label">${ar()?'فارس':'Faris'}</span></div>`:`<div class="box" style="--c1:${p.c1};--c2:${p.c2}"><span class="label">${ar()?'فارس العرب':'Faris'}</span></div>`;
+      const sizes=p.t==='b'?`<div class="sizes">${SIZES.map(s=>`<button class="size" type="button" data-id="${p.id}" data-f="${s.f}" aria-pressed="${(sel[p.id]??1)===s.f}">${s[L()]}</button>`).join('')}</div>`:'';
+      return `<article class="card" style="--glow:${p.c1}33">
+        <div class="vis">${p.tag?`<span class="ribbon">${p.tag[L()]}</span>`:''}${vis}</div>
+        <div class="body"><h3>${p[L()]}</h3><p class="note">${ar()?p.nar:p.nen}</p>${sizes}
+          <div class="foot"><span class="price num" id="pr-${p.id}">${aed(priceOf(p))}</span><button class="add" type="button" data-add="${p.id}">${ar()?'أضف للسلة':'Add to cart'}</button></div></div>
+      </article>`}).join('');
+  }
+  document.getElementById('filters').addEventListener('click',e=>{const b=e.target.closest('[data-g]');if(!b)return;filter=b.dataset.g;renderFilters();renderGrid()});
+  document.getElementById('grid').addEventListener('click',e=>{
+    const s=e.target.closest('.size');
+    if(s){sel[s.dataset.id]=+s.dataset.f;s.parentNode.querySelectorAll('.size').forEach(x=>x.setAttribute('aria-pressed',x===s));const p=P.find(x=>x.id===s.dataset.id);document.getElementById('pr-'+p.id).textContent=aed(priceOf(p));return}
+    const a=e.target.closest('[data-add]');if(!a)return;
+    const p=P.find(x=>x.id===a.dataset.add);const f=p.t==='x'?1:(sel[p.id]??1);const key=p.id+'-'+f;
+    const ex=cart.find(c=>c.key===key);ex?ex.q++:cart.push({key,id:p.id,f,q:1});
+    a.classList.add('done');a.textContent=ar()?'تمت الإضافة':'Added';setTimeout(()=>{a.classList.remove('done');a.textContent=ar()?'أضف للسلة':'Add to cart'},1200);
+    renderCart(true);
+  });
+
+  function sizeName(f){const s=SIZES.find(x=>x.f===f);return ar()?(f===1?'تولة':s.ar+' تولة'):(f===1?'1 tola':s.en+' tola')}
+  function renderCart(pop){
+    const items=document.getElementById('items');let sub=0,count=0;
+    items.innerHTML=cart.length?cart.map((c,i)=>{const p=P.find(x=>x.id===c.id);const line=(p.t==='x'?p.p:p.p*c.f)*c.q;sub+=line;count+=c.q;
+      return `<div class="item"><b>${p[L()]}</b><span class="num">${aed(line)}</span><small>${p.t==='x'?(ar()?'علبة ٥٠ غرام':'50 g box'):sizeName(c.f)}</small>
+      <span class="qty"><button type="button" data-q="-1" data-i="${i}">−</button><span class="num">${n(c.q)}</span><button type="button" data-q="1" data-i="${i}">+</button></span></div>`}).join('')
+      :`<div class="empty">${ar()?'السلة فاضية. أضف عطرك من المتجر.':'Your cart is empty. Add a scent from the shop.'}</div>`;
+    const total=sub+(cart.length&&delivery?15:0);
+    document.getElementById('total').textContent=aed(total);
+    const b=document.getElementById('count');b.textContent=n(count);
+    if(pop){b.classList.add('pop');setTimeout(()=>b.classList.remove('pop'),250)}
+  }
+  document.getElementById('items').addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(!b)return;const c=cart[+b.dataset.i];c.q+=+b.dataset.q;if(c.q<=0)cart.splice(+b.dataset.i,1);renderCart()});
+  document.getElementById('opt').addEventListener('click',e=>{const b=e.target.closest('[data-o]');if(!b)return;delivery=b.dataset.o==='del';document.querySelectorAll('#opt button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderCart()});
+
+  const open=v=>site.classList.toggle('open',v);
+  document.getElementById('cartBtn').onclick=()=>open(true);
+  document.getElementById('closeCart').onclick=()=>open(false);
+  document.getElementById('scrim').onclick=()=>open(false);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')open(false)});
+  document.getElementById('pay').addEventListener('click',e=>{e.preventDefault()});
+
+  function setLang(l){site.dataset.lang=l;site.lang=l;site.dir=l==='ar'?'rtl':'ltr';try{localStorage.setItem('faris-lang',l)}catch(e){}renderFilters();renderGrid();renderCart()}
+  document.getElementById('langBtn').onclick=()=>setLang(ar()?'en':'ar');
+  let saved='ar';try{saved=localStorage.getItem('faris-lang')||'ar'}catch(e){}
+  setLang(saved);
+})();
+</script>
+
+</body></html>

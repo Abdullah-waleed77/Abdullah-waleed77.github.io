@@ -127,6 +127,12 @@ h2{font-weight:700;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.08;letter-sp
 .view{justify-self:start;font-weight:500;font-size:.93rem;color:var(--fg);text-decoration:none;border-bottom:1.5px solid var(--accent);padding-bottom:1px}
 .view:hover{color:var(--accent)}
 
+
+.work.wide{grid-column:1/-1;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:var(--s5);align-items:center}
+.work.wide .shot{grid-row:1/span 5}
+.disclaimer{margin-top:var(--s4);padding:var(--s2) var(--s3);border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:.88rem;max-width:80ch}
+@media (max-width:760px){.work.wide{grid-template-columns:1fr}.work.wide .shot{grid-row:auto}}
+
 /* AI band */
 .band{background:var(--band);color:var(--band-fg);margin-top:var(--s6);padding-block:var(--s6)}
 .band section{padding-block:0}
@@ -231,7 +237,7 @@ footer{padding-block:var(--s3) var(--s4);color:var(--muted);font-size:.84rem;dis
   </div>
 
   <div class="numbers">
-    <div><b>4</b><span data-i="f1">websites built</span></div>
+    <div><b>5</b><span data-i="f1">websites built</span></div>
     <div><b>2</b><span data-i="f4">AI projects</span></div>
     <div><b>3</b><span data-i="f5">automated workflows</span></div>
     <div><b>AR · EN</b><span data-i="f2">bilingual, right-to-left ready</span></div>
@@ -240,7 +246,7 @@ footer{padding-block:var(--s3) var(--s4);color:var(--muted);font-size:.84rem;dis
   <section id="work">
     <div class="head">
       <div class="title"><span class="label" data-i="workL">Selected work</span><h2 data-i="workH">Websites for local businesses</h2></div>
-      <p data-i="workP">Real websites I designed and built for restaurants and cafés in Sharjah. These are screenshots of the actual sites.</p>
+      <p data-i="workP">Real websites I designed and built for restaurants, cafés and shops in Sharjah. These are screenshots of the actual sites.</p>
     </div>
     <div class="grid">
       <article class="work">
@@ -286,7 +292,18 @@ footer{padding-block:var(--s3) var(--s4);color:var(--muted);font-size:.84rem;dis
         <ul class="feats"><li data-i="shA">Menu tabs &amp; search</li><li data-i="shB">Table booking &amp; catering</li><li data-i="shC">Live "open now" status</li></ul>
         <a class="view" href="shababeek/" target="_blank" rel="noopener" data-i="view">View the live site →</a>
       </article>
+      <article class="work wide">
+        <a class="shot" href="faris-al-arab/" target="_blank" rel="noopener" aria-label="Open Faris Al Arab Perfumes website">
+          <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><img src="img/faris-desk.webp" alt="Faris Al Arab Perfumes website on desktop" loading="lazy"></div>
+          <div class="phone"><img src="img/faris-phone.webp" alt="Faris Al Arab Perfumes website on a phone" loading="lazy"></div>
+        </a>
+        <div class="work-top"><h3>Faris Al Arab Perfumes<small>فارس العرب للعطور</small></h3><span class="place" data-i="pFaris">Oud &amp; perfume · Al Shuwaiheen</span></div>
+        <p data-i="frP">An online shop for an oud and perfume store: customers pick products, fill a cart and pay by card through Ziina.</p>
+        <ul class="feats"><li data-i="frA">Shopping cart</li><li data-i="frB">Card payment with Ziina</li><li data-i="frC">Delivery in Sharjah or pickup</li><li data-i="frD">Arabic &amp; English</li></ul>
+        <a class="view" href="faris-al-arab/" target="_blank" rel="noopener" data-i="view">View the live site →</a>
+      </article>
     </div>
+    <p class="disclaimer" data-i="disc">These are concept designs I made for practice and to show my skills. They are not the official websites of these businesses, and I am not affiliated with them. All names, logos and photos belong to their owners.</p>
   </section>
   </div></div>
 
@@ -352,7 +369,7 @@ footer{padding-block:var(--s3) var(--s4);color:var(--muted);font-size:.84rem;dis
 
   <section id="about">
     <div class="head">
-      <div class="title"><h2 data-i="abH">A bit about me</h2></div>
+      <div class="title"><span class="label" data-i="abL">About</span><h2 data-i="abH">A bit about me</h2></div>
     </div>
     <div class="about">
       <div class="about-text">
@@ -391,11 +408,13 @@ const AR = {
   lede:"أصمم مواقع بلغتين للمطاعم والكافيهات والمحلات، وأبني أدوات ذكاء اصطناعي تخفف عنهم الشغل المتكرر، مثل قراءة الفواتير أو الإجابة على أسئلة الموظفين.",
   ctaWork:"شاهد أعمالي", ctaHire:"تواصل معي",
   f1:"مواقع منفّذة", f4:"مشاريع ذكاء اصطناعي", f5:"أنظمة أتمتة", f2:"بلغتين، ومن اليمين لليسار",
-  workL:"أعمال مختارة", workH:"مواقع لأعمال محلية", workP:"مواقع حقيقية صممتها وبنيتها لمطاعم وكافيهات في الشارقة. هذه صور من المواقع نفسها.",
+  workL:"أعمال مختارة", workH:"مواقع لأعمال محلية", workP:"مواقع حقيقية صممتها وبنيتها لمطاعم وكافيهات ومحلات في الشارقة. هذه صور من المواقع نفسها.",
   pDayaa:"سوري · الخالدية", dyP:"موقع بلغتين لمطعم سوري، مبني على شعار المطعم وأطباقه الحقيقية.", dyA:"قائمة طعام بالبحث", dyB:"طلب عبر واتساب", dyC:"شريط اتصال وطلبات على الجوال",
   pBaitna:"كافيه على السطح · الشارقة", btP:"قصة مع التمرير: ساعة تتحرك من قهوة الصباح إلى آخر الليل وأنت تنزل في الصفحة.", btA:"حركة مع التمرير", btB:"صور وفيديو حقيقية", btC:"حجز طاولة عبر واتساب",
   pEmp:"شاورما · الممزر", empP:"موقع عربي جريء فيه سيخ شاورما ثلاثي الأبعاد يدور بجانب كاريكاتير صاحب المحل.", empA:"حركة ثلاثية الأبعاد", empB:"قائمة بالصور", empC:"اطلب بالهاتف أو طلبات",
   pShab:"لبناني · القصباء", shP:"موقع عربي وإنجليزي كامل لمطعم لبناني، يتبدل بزر واحد.", shA:"تصنيفات وبحث في القائمة", shB:"حجز طاولة وتموين", shC:"حالة \"مفتوح الآن\" مباشرة",
+  pFaris:"عطور وعود · الشويهيين", frP:"متجر أونلاين لمحل عطور وعود: الزبون يختار المنتجات، يضيفها للسلة، ويدفع بالبطاقة عبر Ziina.", frA:"سلة مشتريات", frB:"دفع بالبطاقة عبر Ziina", frC:"توصيل داخل الشارقة أو استلام", frD:"عربي وإنجليزي",
+  disc:"هذه تصاميم تجريبية سويتها للتدريب ولعرض مهاراتي. هي ليست المواقع الرسمية لهذه المحلات، ولا تربطني بها أي علاقة رسمية. جميع الأسماء والشعارات والصور ملك لأصحابها.",
   view:"شاهد الموقع ←",
   aiL:"الذكاء الاصطناعي والأتمتة", aiH:"أدوات تقوم بالشغل الروتيني", aiP:"مشروعان يقوم فيهما الذكاء الاصطناعي بعمل حقيقي: مساعد خاص لعيادة، ونظام يعالج الفواتير لوحده.",
   tOnp:"ذكاء اصطناعي داخلي", tDemo:"مشروع تجريبي", tDemo2:"مشروع تجريبي", tAuto:"أتمتة",
